@@ -270,7 +270,7 @@ class CategoryPosts extends WP_Widget {
 					
 					if ( isset( $instance['comment_num'] ) ) : ?>
 						<p class="comment-num <?php if( !isset( $instance['disable_css'] ) ) { echo "cat-post-comment-num"; } ?>">
-							(<?php comments_number(); ?>)
+							<a href="<?php comments_link(); ?>">(<?php comments_number(); ?>)</a>
 						</p>
 					<?php endif;					
 
